@@ -82,7 +82,7 @@ public class Hangman2{
             if (correctGuess){
                 System.out.println("Correct Guess!");
             }
-            
+
             System.out.println(guess);
             
             //increase wrong attempt counter if not there and display hangman
@@ -90,42 +90,42 @@ public class Hangman2{
                 System.out.println("Wrong Guess.");
                 wrongGuessCounter++;
                 switch(wrongGuessCounter){
-                    case 1 ->{System.out.println(" ====|    ");  
+                    case 1 ->  {System.out.println(" ====|    ");  
                                 System.out.println(" |   O    ");
                                 System.out.println(" |        ");
                                 System.out.println(" |        ");
                                 System.out.println(" |        ");
                                 System.out.println(" L        ");}
 
-                    case 2 ->{System.out.println(" ====|    ");  
+                    case 2 ->  {System.out.println(" ====|    ");  
                                 System.out.println(" |   O    ");
                                 System.out.println(" |   |    ");
                                 System.out.println(" |   |    ");
                                 System.out.println(" |        ");
                                 System.out.println(" L        ");}
                             
-                    case 3 ->{System.out.println(" ====|    ");  
+                    case 3 ->  {System.out.println(" ====|    ");  
                                 System.out.println(" |   O    ");
                                 System.out.println(" |  /|    ");
                                 System.out.println(" |   |    ");
                                 System.out.println(" |        ");
                                 System.out.println(" L        ");}
 
-                    case 4 ->{System.out.println(" ====|    ");  
+                    case 4 ->  {System.out.println(" ====|    ");  
                                 System.out.println(" |   O    ");
                                 System.out.println(" |  /|\\  ");
                                 System.out.println(" |   |    ");
                                 System.out.println(" |        ");
                                 System.out.println(" L        ");}
 
-                    case 5 ->{System.out.println(" ====|    ");  
+                    case 5 ->  {System.out.println(" ====|    ");  
                                 System.out.println(" |   O    ");
                                 System.out.println(" |  /|\\  ");
                                 System.out.println(" |   |    ");
                                 System.out.println(" |  /     ");
                                 System.out.println(" L        ");}
 
-                    case 6 ->{System.out.println(" ====|    ");  
+                    case 6 ->  {System.out.println(" ====|    ");  
                                 System.out.println(" |   O    ");
                                 System.out.println(" |  /|\\  ");
                                 System.out.println(" |   |    ");
