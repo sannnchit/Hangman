@@ -50,6 +50,8 @@ public class Hangman{
             for (int i=0; i<mysteryword.length(); i++){
                 guess.add('_');
             }
+            System.out.println("Welcome to Hangman!");
+            System.out.printf("The word has %d letters.\n",mysteryword.length());
             System.out.println(guess);
 
             int wrongGuessCounter = 0;
@@ -66,6 +68,10 @@ public class Hangman{
                         correctGuess= true;
                     }   
                 }
+                if (correctGuess){
+                    System.out.println("Correct Guess!");
+                }
+
                 System.out.println(guess);
                
                 //increase wrong attempt counter if not there and display hangman
@@ -114,14 +120,18 @@ public class Hangman{
                                   System.out.println(" |   |    ");
                                   System.out.println(" |  / \\  ");
                                   System.out.println(" L        ");
+                                  System.out.println("------------------------------");
                                   System.out.printf("You lost.\nThe word was %s.\n",mysteryword);
+                                  System.out.println("------------------------------");
                                   break;}
                     }
                 }
                  
                 //if user guessed the whole word
                 if (!guess.contains('_')){
+                    System.out.println("------------------------------");
                     System.out.printf("YOU WON!!!\nThe word was %s.\n",mysteryword);
+                    System.out.println("------------------------------");
                     break;
                 }
             }
@@ -134,7 +144,9 @@ public class Hangman{
             }} 
             while(!playAgain.equals("yes") && !playAgain.equals("no"));
         }
+        System.out.println("------------------------------");
         System.out.println("Thanks for Playing!!!");
+        System.out.println("------------------------------");
         scanner.close();
 
     }
